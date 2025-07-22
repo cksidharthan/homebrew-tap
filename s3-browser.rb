@@ -5,23 +5,23 @@
 class S3Browser < Formula
   desc "A user-friendly browser for S3-compatible object storage"
   homepage "https://github.com/cksidharthan/s3-browser"
-  version "1.1.0"
+  version "1.2.0"
   license "MIT"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cksidharthan/s3-browser/releases/download/v1.1.0/s3-browser_Darwin_x86_64.tar.gz"
-      sha256 "0b8543b082158dbc15888d983e1ebd38a4aba2f5a5af4463f39e467282924a8d"
+      url "https://github.com/cksidharthan/s3-browser/releases/download/v1.2.0/s3-browser_Darwin_x86_64.tar.gz"
+      sha256 "d66d5ad5dbedd9b0c6568ab44fbda66a32bb51211c21c6582222a552d368d974"
 
       def install
         bin.install "s3-browser"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cksidharthan/s3-browser/releases/download/v1.1.0/s3-browser_Darwin_arm64.tar.gz"
-      sha256 "4a4dde8fc3b2843bb2530bbfb205c184bad49ca6391e617e8d233aad4a26d0a4"
+      url "https://github.com/cksidharthan/s3-browser/releases/download/v1.2.0/s3-browser_Darwin_arm64.tar.gz"
+      sha256 "4d1d75e97854a8473b73f701169645872f4da0ce76245c452f6c109715479145"
 
       def install
         bin.install "s3-browser"
@@ -31,15 +31,15 @@ class S3Browser < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/cksidharthan/s3-browser/releases/download/v1.1.0/s3-browser_Linux_x86_64.tar.gz"
-      sha256 "eefdd8361b78cfe2a6633bd2b98e1920450acbba337c8b5928241535bc13199c"
+      url "https://github.com/cksidharthan/s3-browser/releases/download/v1.2.0/s3-browser_Linux_x86_64.tar.gz"
+      sha256 "10fd471771a5ece9e79e35e291f7020539a67f35f7414a460002664c64801abb"
       def install
         bin.install "s3-browser"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/cksidharthan/s3-browser/releases/download/v1.1.0/s3-browser_Linux_arm64.tar.gz"
-      sha256 "3c8637bbae55f6a2f7bc868c6598d1826535ee4d1da597dc40cad64dffe12712"
+      url "https://github.com/cksidharthan/s3-browser/releases/download/v1.2.0/s3-browser_Linux_arm64.tar.gz"
+      sha256 "6b4941897874e973acfb27b578de9cddc9acf4f68e808b68ed397c2160cfc72a"
       def install
         bin.install "s3-browser"
       end
