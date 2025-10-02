@@ -5,21 +5,21 @@
 class Recovercheck < Formula
   desc "A tool to check for panic recovery in Go code"
   homepage "https://github.com/cksidharthan/recovercheck"
-  version "0.0.3"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cksidharthan/recovercheck/releases/download/v0.0.3/recovercheck_Darwin_x86_64.tar.gz"
-      sha256 "eb818b7f10e4bb2a540589255ab4c96d120f02840a496617e22a5be9756a949d"
+      url "https://github.com/cksidharthan/recovercheck/releases/download/v1.0.0/recovercheck_Darwin_x86_64.tar.gz"
+      sha256 "9a013fe04676c23d87b3b543098bf637e43174c9d73570fd1840170cb9ec4dd2"
 
       def install
         bin.install "recovercheck"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cksidharthan/recovercheck/releases/download/v0.0.3/recovercheck_Darwin_arm64.tar.gz"
-      sha256 "a5fe879d6a78c25c99147308dbcd6609a95ff25521f208b7aef7349c05b3e7fc"
+      url "https://github.com/cksidharthan/recovercheck/releases/download/v1.0.0/recovercheck_Darwin_arm64.tar.gz"
+      sha256 "b060d69510170fd2c84791c402ff92feae70e14efd8373bbc31d38f41276530c"
 
       def install
         bin.install "recovercheck"
@@ -29,15 +29,15 @@ class Recovercheck < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/cksidharthan/recovercheck/releases/download/v0.0.3/recovercheck_Linux_x86_64.tar.gz"
-      sha256 "f3ff420489f9736c0dc3ff69535b1f85ad59ffb39da9553b1b2d4709068554e3"
+      url "https://github.com/cksidharthan/recovercheck/releases/download/v1.0.0/recovercheck_Linux_x86_64.tar.gz"
+      sha256 "e2baa57918a383e897dce099db315df9bbfd29a4cb6163db6bb57f1ba85a1eb5"
       def install
         bin.install "recovercheck"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/cksidharthan/recovercheck/releases/download/v0.0.3/recovercheck_Linux_arm64.tar.gz"
-      sha256 "fc0e430ce6641435bef87e9e74669873164dd7456dbaca8b3ff1528686439e07"
+      url "https://github.com/cksidharthan/recovercheck/releases/download/v1.0.0/recovercheck_Linux_arm64.tar.gz"
+      sha256 "9cfe84a4bfa373cf8b80bb9923d2fed109de0aae0eae4dd24be9517bad8e8c33"
       def install
         bin.install "recovercheck"
       end
