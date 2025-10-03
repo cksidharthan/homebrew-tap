@@ -3,7 +3,7 @@ cask "recovercheck" do
   name "recovercheck"
   desc "A tool to check for panic recovery in Go code"
   homepage "https://github.com/cksidharthan/recovercheck"
-  version "1.3.0"
+  version "1.4.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "recovercheck" do
   on_macos do
     on_intel do
       url "https://github.com/cksidharthan/recovercheck/releases/download/v#{version}/recovercheck_Darwin_x86_64.tar.gz"
-      sha256 "cd182d650d6918c084ac8c76b695890c23ecbff9a35f090bc84440cdb80ca351"
+      sha256 "48125de6cba4271b33fae83c53a2cca10231721fdd188b92fc5d0b2cf0a1bc7c"
     end
     on_arm do
       url "https://github.com/cksidharthan/recovercheck/releases/download/v#{version}/recovercheck_Darwin_arm64.tar.gz"
-      sha256 "a2105a7e2af14d2f6932c90d365cba87515cfe498283d27bbacff75fd1703ab2"
+      sha256 "6720bbcf72aad1dfcb7135daca3867b83662a062b79ced10da615110602c2c05"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/cksidharthan/recovercheck/releases/download/v#{version}/recovercheck_Linux_x86_64.tar.gz"
-      sha256 "ae0105b5ad408a8b2328dd05651a1d1ded2190645e9c9ca8ca710d073c83e461"
+      sha256 "d78c7c37305aab63c328eaa9cca4e46fb2b46356bf28c805fc334ac214d9b576"
     end
     on_arm do
       url "https://github.com/cksidharthan/recovercheck/releases/download/v#{version}/recovercheck_Linux_arm64.tar.gz"
-      sha256 "2b7f92913e26f3b351761b5d294f4428b0d26ccd2dd7ff3b6018e14106be0367"
+      sha256 "e699bc73e3ae6a788202e763644f70a69878b6cd277f314343fe03c56a704c5e"
     end
   end
 
