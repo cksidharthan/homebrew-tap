@@ -13,22 +13,22 @@ cask "recovercheck" do
   on_macos do
     on_intel do
       url "https://github.com/cksidharthan/recovercheck/releases/download/v1.4.0/recovercheck_Darwin_x86_64.tar.gz"
-      sha256 "7dbf4ba2851eeb9fc8772d647889a2afa256eef975925d1b02387fb1d4882d6c"
+      sha256 "ff46a8c937a3dfbaae4a826cf1564655dfde3e845741dcbe253253072afc4b9d"
     end
     on_arm do
       url "https://github.com/cksidharthan/recovercheck/releases/download/v1.4.0/recovercheck_Darwin_arm64.tar.gz"
-      sha256 "74d61ff7ddb0090066b5846d6c8cfa8454bede232ceef4bf6ad866f5039acf55"
+      sha256 "1d29763432b71d10d17efa08b7fd6af24b10dc1f878e9167acd393df5bd1cbf6"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/cksidharthan/recovercheck/releases/download/v1.4.0/recovercheck_Linux_x86_64.tar.gz"
-      sha256 "e00e763f46f40bb83ad5b2ea7f3f3afb64723b5a9f837626d841cd65b1b27d28"
+      sha256 "d9abab6382ce4edf709a0bc1719d45094afbf57a256287053d529c11ce3b8aa9"
     end
     on_arm do
       url "https://github.com/cksidharthan/recovercheck/releases/download/v1.4.0/recovercheck_Linux_arm64.tar.gz"
-      sha256 "23ad5c54c687adf7e325dee75c5d2f76fb203408cb61afc2afa1dd2c553fada4"
+      sha256 "cb89e649598cf9ff27cbe7500bee98d842bebba25db2abfa6b1d2124486600be"
     end
   end
 
